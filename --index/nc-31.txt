@@ -1,0 +1,11 @@
+id: nc-31
+title: inx, the cat of judgement
+text: sand creature divine beast auto when your opponent attacks with a creature creatures they control los3e 1 atk until their turn ends
+image: images/nc31.png
+set: 1
+atk: 5
+def: 8
+cost: 8
+type: 
+rarity: 
+artist: 

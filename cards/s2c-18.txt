@@ -1,0 +1,11 @@
+id: s2c-18
+title: Placeholder 18
+text: placeholder
+image: images/s2c (18).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

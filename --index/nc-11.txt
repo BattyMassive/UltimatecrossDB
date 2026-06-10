@@ -1,0 +1,11 @@
+id: nc-11
+title: Sailing North
+text: water spell if you control a creature with 4 or more def draw 2 cards end your turn
+image: images/nc11.png
+set: 1
+atk: 
+def: 
+cost: 2
+type: 
+rarity: 
+artist: 

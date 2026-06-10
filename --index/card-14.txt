@@ -1,0 +1,11 @@
+id: card-14
+title: Blessing of The Sea
+text: water spell target 1 creature it gains 2 def if it has 4 or more def excavate 4 and add 1 excavated spell to your hand
+image: images/card14.png
+set: 1
+atk: 
+def: 
+cost: 2
+type: 
+rarity: 
+artist: 

@@ -1,0 +1,11 @@
+id: card-47
+title: Rattling Gravekeeper
+text: dark creature skeleton act when played destroy 1 creature you control that cost 4 or less then play that same card from your graveyard it cant use its effects when it's played
+image: images/card47.png
+set: 1
+atk: 2
+def: 3
+cost: 4
+type: 
+rarity: 
+artist: 

@@ -1,0 +1,11 @@
+id: card-23
+title: Clover Mudslide
+text: nature spell creatures you control gain 1 atk nature creatures you control gain 2 atk instead
+image: images/card23.png
+set: 1
+atk: 
+def: 
+cost: 3
+type: 
+rarity: 
+artist: 

@@ -1,0 +1,11 @@
+id: s2c-44
+title: Placeholder 44
+text: placeholder
+image: images/s2c (44).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

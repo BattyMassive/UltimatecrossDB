@@ -1,0 +1,11 @@
+id: card-27
+title: Mega Flora
+text: nature creature plant auto when destroyed nature creatures you control gain 1 def
+image: images/card27.png
+set: 1
+atk: 3
+def: 1
+cost: 3
+type: 
+rarity: 
+artist: 

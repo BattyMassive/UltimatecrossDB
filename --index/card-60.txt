@@ -1,0 +1,11 @@
+id: card-60
+title: Quicksand Djinn
+text: sand creature djinn cont when your opponenet's creature attacks your opponent chooses to either cancel the attack or their ruler is dealt 3 damage
+image: images/card60.png
+set: 1
+atk: 4
+def: 5
+cost: 6
+type: 
+rarity: 
+artist: 

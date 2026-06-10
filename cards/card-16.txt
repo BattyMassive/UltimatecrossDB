@@ -1,0 +1,11 @@
+id: card-16
+title: Book of Water
+text: water spell draw 2 cards
+image: images/card16.png
+set: 1
+atk: 
+def: 
+cost: 3
+type: 
+rarity: 
+artist: 

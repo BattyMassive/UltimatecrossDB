@@ -1,0 +1,11 @@
+id: card-42
+title: Fracturing Skeleton
+text: dark creature skeleton auto once each turn when a dark creature is destroyed deal 1 damage to target creature
+image: images/card42.png
+set: 1
+atk: 1
+def: 2
+cost: 1
+type: 
+rarity: 
+artist: 

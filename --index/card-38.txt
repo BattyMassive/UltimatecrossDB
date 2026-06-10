@@ -1,0 +1,11 @@
+id: card-38
+title: Divine Light
+text: light spell all creatures you control gain 2 atk if they have charge or double attack then all creatures you control gain charge and double attack until the turn ends
+image: images/card38.png
+set: 1
+atk: 
+def: 
+cost: 8
+type: 
+rarity: 
+artist: 

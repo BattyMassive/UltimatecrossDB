@@ -1,0 +1,11 @@
+id: s2c-84
+title: Placeholder 84
+text: placeholder
+image: images/s2c (84).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

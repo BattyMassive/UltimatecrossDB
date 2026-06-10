@@ -1,0 +1,11 @@
+id: s2c-1
+title: boomerangeroo
+text: placeholder
+image: images/s2c (1).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

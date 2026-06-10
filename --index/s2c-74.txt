@@ -1,0 +1,11 @@
+id: s2c-74
+title: Placeholder 74
+text: placeholder
+image: images/s2c (74).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

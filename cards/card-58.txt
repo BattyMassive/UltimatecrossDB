@@ -1,0 +1,11 @@
+id: card-58
+title: Sandstorm
+text: sand spell all creatures in play lose 4 atk destroy any creatures with 0 atk.
+image: images/card58.png
+set: 1
+atk: 
+def: 
+cost: 8
+type: 
+rarity: 
+artist: 

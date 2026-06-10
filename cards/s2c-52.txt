@@ -1,0 +1,11 @@
+id: s2c-52
+title: Placeholder 52
+text: placeholder
+image: images/s2c (52).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

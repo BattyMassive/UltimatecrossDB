@@ -1,0 +1,11 @@
+id: s2c-77
+title: Placeholder 77
+text: placeholder
+image: images/s2c (77).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

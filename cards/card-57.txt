@@ -1,0 +1,11 @@
+id: card-57
+title: Sand Screecher
+text: sand creature desert reptile auto when attacked the attackers owner must pay 2 aura otherwise cancel the attack
+image: images/card57.png
+set: 1
+atk: 4
+def: 3
+cost: 5
+type: 
+rarity: 
+artist: 

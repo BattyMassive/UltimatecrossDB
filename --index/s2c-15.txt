@@ -1,0 +1,11 @@
+id: s2c-15
+title: Placeholder 15
+text: placeholder
+image: images/s2c (15).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

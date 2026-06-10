@@ -1,0 +1,11 @@
+id: s2c-22
+title: Placeholder 22
+text: placeholder
+image: images/s2c (22).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

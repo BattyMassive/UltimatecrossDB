@@ -1,0 +1,11 @@
+id: card-81
+title: TTS Turtle
+text: water creature reptile unique cont when your opponent plays a card they lose 1 aura if they have 0 aura left this card gains 1 atk def
+image: images/card81.png
+set: 1
+atk: 2
+def: 5
+cost: 4
+type: 
+rarity: 
+artist: 

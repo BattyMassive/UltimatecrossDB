@@ -1,0 +1,11 @@
+id: nc-21
+title: an ace
+text: light spell this card costs 00 if you've added a card from hand to play this turn a creature you control gains 2 def and charge
+image: images/nc21.png
+set: 1
+atk: 
+def: 
+cost: 3
+type: 
+rarity: 
+artist: 

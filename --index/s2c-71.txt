@@ -1,0 +1,11 @@
+id: s2c-71
+title: Placeholder 71
+text: placeholder
+image: images/s2c (71).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

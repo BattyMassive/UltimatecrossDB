@@ -1,0 +1,11 @@
+id: nc-26
+title: replenished armies excavate 4 destroy a dark creature that costs 3 or less
+text: dark spell
+image: images/nc26.png
+set: 1
+atk: 
+def: 
+cost: 2
+type: 
+rarity: 
+artist: 

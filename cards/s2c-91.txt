@@ -1,0 +1,11 @@
+id: s2c-91
+title: Placeholder 91
+text: placeholder
+image: images/s2c (91).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

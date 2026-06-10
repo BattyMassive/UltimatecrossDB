@@ -1,0 +1,11 @@
+id: s2c-13
+title: Placeholder 13
+text: placeholder
+image: images/s2c (13).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

@@ -1,0 +1,11 @@
+id: card-66
+title: Cyber Aura Armband
+text: steel equipment atk:+1 def:+1 durability 2 bloodlust 1 resilient 1
+image: images/card66.png
+set: 1
+atk: 
+def: 
+cost: 2
+type: 
+rarity: 
+artist: 

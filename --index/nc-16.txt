@@ -1,0 +1,11 @@
+id: nc-16
+title: Toxic Bloom
+text: nature spell deal 2 damage to all creatures in play creatures you control gain 2 atk
+image: images/nc16.png
+set: 1
+atk: 
+def: 
+cost: 6
+type: 
+rarity: 
+artist: 

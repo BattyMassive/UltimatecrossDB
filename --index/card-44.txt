@@ -1,0 +1,11 @@
+id: card-44
+title: Dark Veion Snake
+text: dark creature reptile auto when destroyed you may destroy 1 creature that costs 3 or less otherwise 1 creature your opponent controls loses 2 atk
+image: images/card44.png
+set: 1
+atk: 3
+def: 3
+cost: 4
+type: 
+rarity: 
+artist: 

@@ -1,0 +1,11 @@
+id: s2c-48
+title: Placeholder 48
+text: placeholder
+image: images/s2c (48).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

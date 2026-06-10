@@ -1,0 +1,11 @@
+id: card-82
+title: Lizard From The 20's
+text: water creature reptile charge unique auto when destroyed for the next 3 of your turns all cost 4 or less creatures in your hand cost 1 less
+image: images/card82.png
+set: 1
+atk: 4
+def: 2
+cost: 6
+type: 
+rarity: 
+artist: 

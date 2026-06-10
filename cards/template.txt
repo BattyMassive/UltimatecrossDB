@@ -1,0 +1,11 @@
+id: card-1
+title: Fire Dancer
+text: 
+image: images/card1.png
+set: 1
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

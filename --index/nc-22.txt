@@ -1,0 +1,11 @@
+id: nc-22
+title: warp raider
+text: dark creature demon act when played this cards cost becomes 3 if you discard 2 cards from your hand auto if played it full cost it gains charge
+image: images/nc22.png
+set: 1
+atk: 3
+def: 5
+cost: 6
+type: 
+rarity: 
+artist: 

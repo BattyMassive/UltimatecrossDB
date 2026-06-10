@@ -1,0 +1,11 @@
+id: s2c-30
+title: Placeholder 30
+text: placeholder
+image: images/s2c (30).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

@@ -1,0 +1,11 @@
+id: card-64
+title: 45-j33
+text: steel creature android act target 1 creature it gains 1 def if it is unequipped it loses 1 atk
+image: images/card64.png
+set: 1
+atk: 4
+def: 4
+cost: 4
+type: 
+rarity: 
+artist: 

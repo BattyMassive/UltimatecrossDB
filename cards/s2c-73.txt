@@ -1,0 +1,11 @@
+id: s2c-73
+title: Placeholder 73
+text: placeholder
+image: images/s2c (73).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

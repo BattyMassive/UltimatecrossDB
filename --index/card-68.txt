@@ -1,0 +1,11 @@
+id: card-68
+title: Hurricane of Steel
+text: steel spell all equipment you control gains 3 atk def and must attack this turn if any of the equipments remain on the field after their attack add them to your hand
+image: images/card68.png
+set: 1
+atk: 
+def: 
+cost: 8
+type: 
+rarity: 
+artist: 

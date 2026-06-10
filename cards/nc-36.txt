@@ -1,0 +1,11 @@
+id: nc-36
+title: bestowed power
+text: galaxy spell play a creature that costs 2 or less from your hand it gains 2 atk def and charge destroy it when your turn ends
+image: images/nc36.png
+set: 1
+atk: 
+def: 
+cost: 3
+type: 
+rarity: 
+artist: 

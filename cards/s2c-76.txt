@@ -1,0 +1,11 @@
+id: s2c-76
+title: Placeholder 76
+text: placeholder
+image: images/s2c (76).png
+set: 2
+atk: 
+def: 
+cost: 
+type: 
+rarity: 
+artist: 

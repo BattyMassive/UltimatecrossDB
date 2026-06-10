@@ -7,7 +7,7 @@ const setFilterEl = document.getElementById('card_set_filter');
 const pageButtons = document.querySelectorAll('.topbar_button');
 const pages = document.querySelectorAll('.page');
 const cardsDir = 'cards';
-const cardIndexFile = `${cardsDir}/index.json`;
+const cardIndexFile = `${cardsDir}/index.txt`;
 
 init();
 
@@ -47,15 +47,30 @@ async function fetchCardIndex() {
     if (!response.ok) {
       throw new Error(`Failed to fetch ${cardIndexFile}: ${response.status}`);
     }
-    return response.json();
+
+    const text = await response.text();
+    const fileList = text.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+    if (fileList.length) {
+      return fileList;
+    }
+
+    throw new Error(`Empty index file: ${cardIndexFile}`);
   } catch (error) {
-    console.warn('Card index not found, falling back to template.json');
-    return ['template.json'];
+    console.warn('Card index not found or empty, falling back to index.json or template files', error);
+    try {
+      const jsonResponse = await fetch(`${cardsDir}/index.json`);
+      if (jsonResponse.ok) {
+        return await jsonResponse.json();
+      }
+    } catch (fallbackError) {
+      console.warn('Fallback index.json load failed', fallbackError);
+    }
+    return ['template.txt'];
   }
 }
 
 async function loadCardsFromFiles(fileList) {
-  const files = Array.isArray(fileList) && fileList.length ? fileList : ['template.json'];
+  const files = Array.isArray(fileList) && fileList.length ? fileList : ['template.txt'];
   const loaded = await Promise.all(files.map(fetchCardFile));
   return loaded.filter(Boolean);
 }
@@ -67,11 +82,38 @@ async function fetchCardFile(filename) {
     if (!response.ok) {
       throw new Error(`Failed to fetch ${filePath}: ${response.status}`);
     }
-    return await response.json();
+
+    if (filename.toLowerCase().endsWith('.json')) {
+      return await response.json();
+    }
+
+    const raw = await response.text();
+    return parseCardText(raw);
   } catch (error) {
     console.warn(`Unable to load card file ${filename}:`, error);
     return null;
   }
+}
+
+function parseCardText(rawText) {
+  const card = {};
+  rawText.split(/\r?\n/).forEach(line => {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) {
+      return;
+    }
+
+    const separatorIndex = trimmed.indexOf(':');
+    if (separatorIndex === -1) {
+      return;
+    }
+
+    const key = trimmed.slice(0, separatorIndex).trim();
+    const value = trimmed.slice(separatorIndex + 1).trim();
+    card[key] = value;
+  });
+
+  return card;
 }
 
 function normalizeCards(list) {

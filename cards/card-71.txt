@@ -1,0 +1,11 @@
+id: card-71
+title: Galacticarp
+text: galaxy creature intergalactic fish auto when destroyed your ruler gains 2 def if this is th eonly creature you control gain 3 def instead
+image: images/card71.png
+set: 1
+atk: 0
+def: 1
+cost: 1
+type: 
+rarity: 
+artist: 

@@ -1,0 +1,11 @@
+id: nc-18
+title: Lightning in a bottle
+text: Light spell target creature you control gains 4 atk return it to your hand when your turn ends
+image: images/nc18.png
+set: 1
+atk: 
+def: 
+cost: 3
+type: 
+rarity: 
+artist: 

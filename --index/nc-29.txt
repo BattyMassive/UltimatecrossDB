@@ -1,0 +1,11 @@
+id: nc-29
+title: dusting hunter
+text: sand creature dragon auto when played target creature loses 2 atk
+image: images/nc29.png
+set: 1
+atk: 4
+def: 2
+cost: 4
+type: 
+rarity: 
+artist: 

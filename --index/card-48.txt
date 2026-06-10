@@ -1,0 +1,11 @@
+id: card-48
+title: Shadow Tsunami
+text: dark spell play 3 creatures from your graveyard without triggering play effects destroy them when your turn ends
+image: images/card48.png
+set: 1
+atk: 
+def: 
+cost: 8
+type: 
+rarity: 
+artist: 

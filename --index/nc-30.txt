@@ -1,0 +1,11 @@
+id: nc-30
+title: sandhook gheist
+text: sand creature desert beast guardian while in play your opponent must attack this card before any other creature ruler
+image: images/nc30.png
+set: 1
+atk: 4
+def: 4
+cost: 4
+type: 
+rarity: 
+artist: 

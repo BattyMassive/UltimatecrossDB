@@ -1,0 +1,11 @@
+id: card-67
+title: Looping Code
+text: steel hazard when an equipped creature you control is destroyed an equipment you control is equpped to another creature it loses 1 durability
+image: images/card67.png
+set: 1
+atk: 
+def: 
+cost: 2
+type: 
+rarity: 
+artist: 
