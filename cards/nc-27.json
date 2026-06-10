@@ -1,0 +1,13 @@
+{
+  "id": "nc-27",
+  "title": "quicksand claw dino",
+  "text": "sand creature dinosaur auto when played deal damage to your opponents ruler equal to havlf your max aura rounded down",
+  "image": "images/nc27.png",
+  "set": "1",
+  "atk": "4",
+  "def": "3",
+  "cost": "5",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

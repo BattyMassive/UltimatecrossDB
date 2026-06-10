@@ -1,0 +1,13 @@
+{
+  "id": "card-73",
+  "title": "Space Man",
+  "text": "galaxy creature human cont once per turn when your ruler gains def draw 1 card auto when destroyed dyour ruler gains 2 def",
+  "image": "images/card73.png",
+  "set": "1",
+  "atk": "2",
+  "def": "3",
+  "cost": "3",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

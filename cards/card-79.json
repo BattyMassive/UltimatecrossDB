@@ -1,0 +1,13 @@
+{
+  "id": "card-79",
+  "title": "Galaxy Star Fox",
+  "text": "galaxy creature intergalactic fox auto when played deal damage to target creature equal to the amount of def you gained this turn if you control no other creatures erase 1 creature and all other copies of this card in your zones then this card loses its effects",
+  "image": "images/card79.png",
+  "set": "1",
+  "atk": "5",
+  "def": "4",
+  "cost": "6",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

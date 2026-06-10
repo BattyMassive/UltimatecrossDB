@@ -1,0 +1,13 @@
+{
+  "id": "nc-25",
+  "title": "agonized spawn",
+  "text": "dark creature beast auto when destroyed target dark creature you control gains 1 atk",
+  "image": "images/nc25.png",
+  "set": "1",
+  "atk": "2",
+  "def": "1",
+  "cost": "1",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "card-51",
+  "title": "Sand Shark",
+  "text": "sand creature desert fish auto when attacked the attacker's owner discards 1 card from their hand",
+  "image": "images/card51.png",
+  "set": "1",
+  "atk": "2",
+  "def": "2",
+  "cost": "2",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

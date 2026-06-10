@@ -1,0 +1,13 @@
+{
+  "id": "nc-17",
+  "title": "Hiaka Refugees",
+  "text": "Light creature hiaka auto when added to hand excavate 4 add an excavated creature that costs 4 or less",
+  "image": "images/nc17.png",
+  "set": "1",
+  "atk": "3",
+  "def": "3",
+  "cost": "4",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

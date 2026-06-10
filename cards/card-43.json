@@ -1,0 +1,13 @@
+{
+  "id": "card-43",
+  "title": "Saber Fanged Bat",
+  "text": "dark creature beast auto when destroyed excavate 2 from both player's decks discard 1 excavated card then put the remaining cards on the top of their owner's deck",
+  "image": "images/card43.png",
+  "set": "1",
+  "atk": "2",
+  "def": "2",
+  "cost": "2",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

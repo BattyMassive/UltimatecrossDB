@@ -1,0 +1,13 @@
+{
+  "id": "card-56",
+  "title": "Buried Pyramid",
+  "text": "sand creature object traitor play this card on your opponent's field immobile 3 auto when taking damage from a creature you control lose 1 atk until the turn ends.",
+  "image": "images/card56.png",
+  "set": "1",
+  "atk": "0",
+  "def": "4",
+  "cost": "2",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

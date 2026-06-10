@@ -1,0 +1,13 @@
+{
+  "id": "card-26",
+  "title": "Beetle Boss",
+  "text": "nature creature insect auto when played excavate 5 then play 1 excavated nature creature that cost 3 or less",
+  "image": "images/card26.png",
+  "set": "1",
+  "atk": "3",
+  "def": "3",
+  "cost": "5",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

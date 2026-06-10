@@ -1,0 +1,13 @@
+{
+  "id": "card-25",
+  "title": "Rippleback",
+  "text": "nature creature insect auto when played target 1 other nature creature you control. It gains 1 atk def",
+  "image": "images/card25.png",
+  "set": "1",
+  "atk": "2",
+  "def": "3",
+  "cost": "3",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

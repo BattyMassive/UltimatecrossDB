@@ -1,0 +1,13 @@
+{
+  "id": "nc-35",
+  "title": "buffer bot",
+  "text": "steel creature mechanical auto when played target equipment you control gains 1 durability",
+  "image": "images/nc35.png",
+  "set": "1",
+  "atk": "5",
+  "def": "5",
+  "cost": "5",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

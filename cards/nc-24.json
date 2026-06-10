@@ -1,0 +1,13 @@
+{
+  "id": "nc-24",
+  "title": "abyss witch",
+  "text": "dark creature monster mage auto when played add a creature from your graveyard to your hand",
+  "image": "images/nc24.png",
+  "set": "1",
+  "atk": "4",
+  "def": "3",
+  "cost": "5",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

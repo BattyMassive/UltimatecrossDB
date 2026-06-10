@@ -1,0 +1,13 @@
+{
+  "id": "card-30",
+  "title": "Moth Dragon",
+  "text": "nature creature insect dragon unique auto when played target creature becomes a 0/1 nature creature with no effect",
+  "image": "images/card30.png",
+  "set": "1",
+  "atk": "8",
+  "def": "4",
+  "cost": "10",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}
