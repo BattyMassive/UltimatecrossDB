@@ -1,0 +1,13 @@
+{
+  "id": "nc-5",
+  "title": "Firework Producer",
+  "text": "Fire Creature Demon auto when played deal 1 damage to target creature repeat this effect twice more",
+  "image": "images/nc5.png",
+  "set": "1",
+  "atk": "3",
+  "def": "3",
+  "cost": "5",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

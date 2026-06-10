@@ -1,0 +1,13 @@
+{
+  "id": "card-21",
+  "title": "4 Leaf Flower",
+  "text": "nature creature plant auto when played draw 1 card",
+  "image": "images/card21.png",
+  "set": "1",
+  "atk": "2",
+  "def": "1",
+  "cost": "2",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

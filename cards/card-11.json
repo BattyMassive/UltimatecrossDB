@@ -1,0 +1,13 @@
+{
+  "id": "card-11",
+  "title": "The Aquamancer",
+  "text": "water creature human mage act excavate 1 you may put it at the top or bottom of your deck",
+  "image": "images/card11.png",
+  "set": "1",
+  "atk": "1",
+  "def": "2",
+  "cost": "1",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

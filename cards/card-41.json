@@ -1,0 +1,13 @@
+{
+  "id": "card-41",
+  "title": "Monster Pirate Tentaclebeard",
+  "text": "dark ruler monster pirate discard 1 card add the bottom card of your graveyard to your hand erase it when your turn ends if it is in hand alter auto when a dark card is discarded you may pay the cost of 1 dark creature that costs 2 or less from your graveyard and play it",
+  "image": "images/card41.png",
+  "set": "1",
+  "atk": "1",
+  "def": "25",
+  "cost": "",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

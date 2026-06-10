@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ultimate-Crosss DB</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<!-- TOP BAR -->
+    <header class="topbar">
+        <div class="topbar_all">Ultimate-Cross DB
+            <button type="button" class="topbar_button active" data-page="db_page">Database</button>
+            <button type="button" class="topbar_button" data-page="rules_page">Rules</button>
+        </div>
+    </header>
+<!-- SEARCH BAR -->
+    <body>
+        <main class="container">
+            <section id="db_page" class="page active_page">
+                <section class="search">
+                    <input id="db_query" type="text" placeholder="Search for card..."/>
+                             <select id="card_set_filter" aria-label="Filter cards by set">
+                                <option value="all">All Cards</option>
+                                <option value="1">Ultimate Alliance</option>
+                                <option value="2">Awakening</option>
+                            </select>
+                </section>
+ <!-- SEARCH RESULTS -->
+                <div class="card-browser">
+                    <section id="results" class="results"></section>
+                </div>
+                <!-- FULLSCREEN CARD MODAL -->
+                <div id="card-modal" class="card-modal hidden">
+                    <div class="card-modal-overlay"></div>
+                    <div class="card-modal-content">
+                        <button id="close-card-modal" class="card-modal-close" type="button" aria-label="Close card">×</button>
+                        <div class="card-modal-left">
+                            <img id="card-modal-image" src="" alt="" />
+                        </div>
+                        <div class="card-modal-right">
+                            <div class="card-modal-copy">
+                                <h2 id="card-modal-title"></h2>
+                                <div id="card-modal-meta" class="card-modal-meta"></div>
+                                <p id="card-modal-text"></p>
+                                <p id="card-modal-artist" class="card-modal-artist"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="script.js" defer></script>
+            </section>
+
+            <section id="rules_page" class="page hidden" aria-hidden="true">
+                <div class="page-content">
+                    <h1>Ultimate Cross Rulebook</h1>
+                    <h2>Winning the Game</h2>
+                    <p>There are two ways to win in Ultimate Cross:</p>
+                    <ul>
+                      <li>Reduce your opponent’s Ruler’s DEF to 0.</li>
+                      <li>Force your opponent to draw from an empty deck.</li>
+                    </ul>
+
+                    <h2>Card Anatomy</h2>
+                    <p>Every card in Ultimate Cross has these core elements:</p>
+                    <ol>
+                      <li><strong>Name</strong> — the card’s title.</li>
+                      <li><strong>Type</strong> — the card’s classification (Ruler, Creature, Equipment, Hazard, etc.).</li>
+                      <li><strong>Cost</strong> — how much Aura is required to play the card.</li>
+                      <li><strong>Effect</strong> — what the card does when played or when activated.</li>
+                      <li><strong>Flavor Text</strong> — extra story or theme text with no gameplay effect.</li>
+                      <li><strong>Artist Credit</strong> — who created the card art.</li>
+                      <li><strong>Rarity</strong> — how rare the card is in the set.</li>
+                      <li><strong>Card Number</strong> — the card’s place within the set.
+                      </li>
+                    </ol>
+                    <p>Rulers, Creatures, and Equipments also show <strong>ATK</strong> and <strong>DEF</strong>.</p>
+
+                    <h2>Field and Zone Layout</h2>
+                    <p>The game board is divided into these main zones:</p>
+                    <ul>
+                      <li><strong>Field</strong> — cards currently in play. You may have up to <strong>7 Creatures</strong> and up to <strong>5 Equipments/Hazards</strong> on your field.</li>
+                      <li><strong>Deck</strong> — your draw pile.</li>
+                      <li><strong>Graveyard</strong> — for used, discarded, or destroyed cards.</li>
+                      <li><strong>Erase</strong> — for erased cards. These cards never return to the game.</li>
+                    </ul>
+
+                    <h2>Game Setup</h2>
+                    <ol>
+                      <li>Place your Ruler into your Ruler Zone.</li>
+                      <li>Shuffle your deck and draw the top 6 cards.</li>
+                      <li>Randomly determine who goes first.</li>
+                      <li>First player draws 1 card on their first turn and starts with <strong>2 Aura</strong>. Second player draws no cards on their first turn and starts with <strong>3 Aura</strong>.</li>
+                    </ol>
+
+                    <h2>Aura</h2>
+                    <p>Aura is the main resource of the game. It is used to play cards and activate effects.</p>
+                    <ul>
+                      <li>At the start of each turn, increase your <strong>Max Aura</strong> by 1.</li>
+                      <li>Then reset your current Aura to your Max Aura.</li>
+                      <li>Each player can have a maximum of <strong>10 Aura</strong>.</li>
+                      <li>When you play a card, you pay its play cost in Aura.</li>
+                      <li>Unused Aura carries over to your opponent’s turn.</li>
+                    </ul>
+
+                    <h2>Turn Structure</h2>
+                    <p>Each turn is divided into phases:</p>
+                    <ol>
+                      <li><strong>Draw Phase</strong>
+                        <ul>
+                          <li>Draw 1 card.</li>
+                          <li>Reset your Aura to Max Aura.</li>
+                          <li>Gain 1 additional Aura.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Main Phase</strong>
+                        <ul>
+                          <li>Play cards from your hand.</li>
+                          <li>Activate ACT effects.</li>
+                          <li>Declare attacks.</li>
+                        </ul>
+                      </li>
+                      <li><strong>End Phase</strong>
+                        <ul>
+                          <li>Remove any effects that expire at end of turn.</li>
+                          <li>Remove <strong>Immobile 1</strong> from your cards.</li>
+                          <li>End your turn and pass priority to your opponent.</li>
+                        </ul>
+                      </li>
+                    </ol>
+
+                    <h2>Playing Cards</h2>
+                    <ol>
+                      <li>Choose a card from your hand.</li>
+                      <li>Pay Aura equal to its play cost.</li>
+                      <li>Place the card onto the field face-up. If it is a Hazard, place it face-down instead.</li>
+                    </ol>
+                    <p>When a Creature enters the field, it gains <strong>Immobile 1</strong>, which prevents it from attacking on that same turn.</p>
+
+                    <h2>Card Resolution</h2>
+                    <ol>
+                      <li>The turn player plays a card.</li>
+                      <li>The opposing player may activate and resolve any response effects available at that time.</li>
+                      <li>The turn player resolves any effects that trigger when a card is played.</li>
+                    </ol>
+                    <p>If any cards or effects leave the field before the resolution completes, the affected effect or attack does not resolve.</p>
+
+                    <h2>Effect Types</h2>
+                    <ul>
+                      <li><strong>AUTO</strong> — triggers automatically when its condition is met.</li>
+                      <li><strong>ACT</strong> — can be used only during the Main Phase. Declare the effect to use it. Limited to once per turn per card name.</li>
+                      <li><strong>CONT</strong> — continuous. It remains active while the card remains on the field.</li>
+                    </ul>
+
+                    <h2>Activating Effects</h2>
+                    <ol>
+                      <li>Turn player activates an effect.</li>
+                      <li>Opposing player may activate a response effect if available.</li>
+                      <li>Turn player resolves the activated effect.</li>
+                    </ol>
+                    <p>If cards or effects leave the field before resolution, the triggering effect does not resolve.</p>
+
+                    <h2>Attacking</h2>
+                    <ol>
+                      <li>Declare an attacker and its target.</li>
+                      <li>If the opponent has no Creatures, you may attack their Ruler directly.</li>
+                      <li>The opposing player may activate response effects.</li>
+                      <li>The attacking player may activate effects that respond to attacking.</li>
+                      <li>Resolve damage.</li>
+                    </ol>
+
+                    <h2>Damage Resolution</h2>
+                    <ol>
+                      <li>Both targets lose DEF equal to the opponent’s ATK.</li>
+                      <li>If a card’s DEF reaches 0 or less, it is destroyed and sent to the Graveyard.</li>
+                      <li>If a card attacks a Ruler, the Ruler takes damage equal to the attacking card’s ATK, and the attacking card loses DEF equal to the Ruler’s ATK.</li>
+                      <li>If a Ruler’s DEF reaches 0 or less, that player loses the game.</li>
+                    </ol>
+
+                    <h2>Deck Construction</h2>
+                    <ul>
+                      <li>Your deck must contain <strong>1 Ruler</strong> and <strong>40–50 cards</strong>.</li>
+                      <li>You may include up to <strong>4 copies</strong> of the same card name.</li>
+                    </ul>
+                </div>
+            </section>
+<!-- END OF FILE -->
+    </body>
+</html>

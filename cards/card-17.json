@@ -1,0 +1,13 @@
+{
+  "id": "card-17",
+  "title": "Colossal Lobster",
+  "text": "water creature aquatic auto when destroying a creature this card gains 1 def",
+  "image": "images/card17.png",
+  "set": "1",
+  "atk": "3",
+  "def": "5",
+  "cost": "5",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

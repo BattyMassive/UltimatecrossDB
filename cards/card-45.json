@@ -1,0 +1,13 @@
+{
+  "id": "card-45",
+  "title": "Momento",
+  "text": "dark equipment atk:+0 def:+0 durability 2 auto when a creature you control is destroyed this card gains bloodlust 1 and resilient 1",
+  "image": "images/card45.png",
+  "set": "1",
+  "atk": "",
+  "def": "",
+  "cost": "1",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

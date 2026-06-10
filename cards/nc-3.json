@@ -1,0 +1,13 @@
+{
+  "id": "nc-3",
+  "title": "Power Dancer",
+  "text": "Fire Creature Human cont when your turn ends if this cards atk is 3 or more draw 1 card",
+  "image": "images/nc3.png",
+  "set": "1",
+  "atk": "2",
+  "def": "2",
+  "cost": "3",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

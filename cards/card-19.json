@@ -1,0 +1,13 @@
+{
+  "id": "card-19",
+  "title": "Drown",
+  "text": "water spell excavate 8 for each water card excavated target creature gains 1 def for each non-water card excavated destroy then and the targeted creature gains 1 atk",
+  "image": "images/card19.png",
+  "set": "1",
+  "atk": "",
+  "def": "",
+  "cost": "8",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

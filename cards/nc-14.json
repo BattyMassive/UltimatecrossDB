@@ -1,0 +1,13 @@
+{
+  "id": "nc-14",
+  "title": "Hearth-Barer",
+  "text": "nature creature plant malleable +1 +1 auto when played creatures you control gain 1 atk",
+  "image": "images/nc14.png",
+  "set": "1",
+  "atk": "0",
+  "def": "2",
+  "cost": "2",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "card-69",
+  "title": "Chained Fist MK IV",
+  "text": "steel equipment atk:+2 def:+1 durability 2 auto when the equipped creature attacks excavate 4 add an excavated equipment to your hand",
+  "image": "images/card69.png",
+  "set": "1",
+  "atk": "",
+  "def": "",
+  "cost": "3",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

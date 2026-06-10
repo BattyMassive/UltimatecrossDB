@@ -1,0 +1,13 @@
+{
+  "id": "card-20",
+  "title": "Oceanic Hydra",
+  "text": "water creature aquatic dragon stomp auto when gaining def it gains equal atk until the end of this turn",
+  "image": "images/card20.png",
+  "set": "1",
+  "atk": "3",
+  "def": "7",
+  "cost": "8",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

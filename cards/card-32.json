@@ -1,0 +1,13 @@
+{
+  "id": "card-32",
+  "title": "Cyber Roadrunner",
+  "text": "light creature android bird durability 1 malleable this card may be played as an equipment or creature double attack this card can attack twice",
+  "image": "images/card32.png",
+  "set": "1",
+  "atk": "2",
+  "def": "2",
+  "cost": "2",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

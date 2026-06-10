@@ -1,0 +1,13 @@
+{
+  "id": "card-18",
+  "title": "Prince Leviathan",
+  "text": "water ruler leviathan act a creature you control takes 1 damage then gains 1 atk alter auto when you add a card to your hand from effects a creature you control gains resilient 1 until the end of the turn",
+  "image": "images/card18.png",
+  "set": "1",
+  "atk": "1",
+  "def": "30",
+  "cost": "",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

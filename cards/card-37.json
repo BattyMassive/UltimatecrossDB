@@ -1,0 +1,13 @@
+{
+  "id": "card-37",
+  "title": "Magical Cowboy",
+  "text": "light creature human auto when played target 1 creature you control it gains striker and 2 atk",
+  "image": "images/card37.png",
+  "set": "1",
+  "atk": "3",
+  "def": "3",
+  "cost": "5",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

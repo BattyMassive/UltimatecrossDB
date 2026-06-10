@@ -1,0 +1,13 @@
+{
+  "id": "nc-4",
+  "title": "Sword Goblin",
+  "text": "Fire Creature Goblin auto when played deal 1 damage to all creatures your opponent controls",
+  "image": "images/nc4.png",
+  "set": "1",
+  "atk": "1",
+  "def": "1",
+  "cost": "1",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}

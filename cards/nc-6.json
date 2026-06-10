@@ -1,0 +1,13 @@
+{
+  "id": "nc-6",
+  "title": "Villainized Reinforcer",
+  "text": "Steel creature mechanical auto when played equipments you control gain 1 atk def",
+  "image": "images/nc6.png",
+  "set": "1",
+  "atk": "3",
+  "def": "4",
+  "cost": "4",
+  "artist": "",
+  "rarity": "",
+  "type": ""
+}
