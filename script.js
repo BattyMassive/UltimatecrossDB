@@ -201,6 +201,7 @@ document.addEventListener('keydown', (e) => {
 
 function handleFilterChange() {
   const q = inputEl.value.trim().toLowerCase();
+<<<<<<< HEAD
   const parts = q ? q.split(/\s+/).filter(Boolean) : [];
   
   // Separate identifier queries from regular keywords
@@ -233,6 +234,17 @@ function handleFilterChange() {
     
     const matchesSet = setFilterEl.value === 'all' || card.set === setFilterEl.value;
     return matchesKeywords && matchesIdentifiers && matchesSet;
+=======
+  const keywords = q ? q.split(/\s+/).filter(Boolean) : [];
+
+  const filtered = cards.filter(card => {
+    if (!card.text) return false;
+    const titleLower = card.title.toLowerCase();
+    const textLower = card.text.toLowerCase();
+    const matchesSearch = keywords.every(keyword => titleLower.includes(keyword) || textLower.includes(keyword));
+    const matchesSet = setFilterEl.value === 'all' || card.set === setFilterEl.value;
+    return matchesSearch && matchesSet;
+>>>>>>> 0af5b40799cca36a0d36715f116eb2a8d3ba8a06
   });
 
   renderResults(filtered);
