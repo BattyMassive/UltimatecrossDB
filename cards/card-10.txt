@@ -1,11 +1,11 @@
 id: card-10
 title: Berserkasaurus Rex
-text: fire creature dinosaur auto when you deal effect damage you may attack the damaged card
+text:  auto when you deal effect damage you may attack the damaged card
 image: images/card10.png
 set: 1
 atk: 4
 def: 10
-cost: 8
-type: 
-rarity: 
-artist: 
+cost: 9
+type: fire creature dinosaur
+rarity: element rare
+artist: vexabond

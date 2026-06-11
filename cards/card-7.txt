@@ -1,11 +1,11 @@
 id: card-7
 title: Fire Tornado
-text: fire hazard when a creature is dealt damage target 1 damaged creature and move up to 2 damage from that creature to another creature
+text: when a creature is dealt damage target 1 damaged creature and move up to 2 damage from that creature to another creature
 image: images/card7.png
 set: 1
-atk: 
-def: 
+atk: null
+def: null
 cost: 3
-type: 
-rarity: 
-artist: 
+type: fire hazard 
+rarity: rare
+artist: sentinel
