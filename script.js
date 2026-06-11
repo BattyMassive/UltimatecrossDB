@@ -51,7 +51,7 @@ async function fetchCardIndex() {
     const text = await response.text();
     const fileList = text.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
     if (fileList.length) {
-      return fileList;
+      return fileList.sort(compareNaturalStrings);
     }
 
     throw new Error(`Empty index file: ${cardIndexFile}`);
@@ -137,6 +137,31 @@ function normalizeCards(list) {
       artist: card.artist || ''
     };
   });
+}
+
+function compareNaturalStrings(a, b) {
+  const regex = /(\d+)|([^\d]+)/g;
+  const aParts = String(a).toLowerCase().match(regex) || [];
+  const bParts = String(b).toLowerCase().match(regex) || [];
+
+  while (aParts.length && bParts.length) {
+    const aPart = aParts.shift();
+    const bPart = bParts.shift();
+
+    const aNum = Number(aPart);
+    const bNum = Number(bPart);
+
+    if (!Number.isNaN(aNum) && !Number.isNaN(bNum)) {
+      if (aNum !== bNum) return aNum - bNum;
+      continue;
+    }
+
+    if (aPart !== bPart) {
+      return aPart.localeCompare(bPart, undefined, { sensitivity: 'base' });
+    }
+  }
+
+  return aParts.length - bParts.length;
 }
 
 function renderResults(list) {
