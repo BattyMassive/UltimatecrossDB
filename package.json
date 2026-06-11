@@ -1,0 +1,14 @@
+{
+  "name": "ucdb1-tailwind",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./tailwind.css -o ./dist/styles.css --minify",
+    "watch:css": "npx tailwindcss -i ./tailwind.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.0",
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0"
+  }
+}

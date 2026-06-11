@@ -1,7 +1,12 @@
 let cards = [];
+let visibleCards = [];
+let currentIndex = -1;
+let isAnimating = false;
 const results = document.getElementById('results');
 const cardModal = document.getElementById('card-modal');
 const closeModalButton = document.getElementById('close-card-modal');
+const prevButton = document.getElementById('card-prev');
+const nextButton = document.getElementById('card-next');
 const inputEl = document.getElementById('db_query');
 const setFilterEl = document.getElementById('card_set_filter');
 const pageButtons = document.querySelectorAll('.topbar_button');
@@ -166,6 +171,7 @@ function compareNaturalStrings(a, b) {
 
 function renderResults(list) {
   results.innerHTML = '';
+  visibleCards = Array.isArray(list) ? list : [];
   if (!list || list.length === 0) {
     results.innerHTML = '<p class="error">No cards found.</p>';
     return;
@@ -202,7 +208,86 @@ function selectCard(card, cardElement) {
     cardElement.classList.add('selected');
   }
 
+  // set current index within the visible set (fallback to global cards)
+  let idx = findIndexById(card.id);
+  if (idx === -1) idx = cards.findIndex(c => c.id === card.id);
+  currentIndex = idx;
+
   renderCardModal(card);
+}
+
+function findIndexById(id) {
+  return visibleCards.findIndex(c => c.id === id);
+}
+
+function showCardByIndex(index, direction = 1) {
+  if (!visibleCards || visibleCards.length === 0) return;
+  if (isAnimating) return;
+  const wrapped = (index + visibleCards.length) % visibleCards.length;
+  currentIndex = wrapped;
+  const card = visibleCards[wrapped];
+  // preload neighbors
+  preloadNeighborImages(wrapped);
+  animateModalImageTo(card, direction);
+  renderCardModal(card);
+}
+
+function navigate(delta) {
+  if (currentIndex === -1) return;
+  if (isAnimating) return;
+  const nextIndex = (currentIndex + delta + visibleCards.length) % visibleCards.length;
+  showCardByIndex(nextIndex, delta);
+}
+
+function preloadNeighborImages(index) {
+  const prev = visibleCards[(index - 1 + visibleCards.length) % visibleCards.length];
+  const next = visibleCards[(index + 1) % visibleCards.length];
+  [prev, next].forEach(card => {
+    if (card && card.image) {
+      const img = new Image();
+      img.src = card.image;
+    }
+  });
+}
+
+function animateModalImageTo(card, direction = 1) {
+  const wrap = document.getElementById('card-modal-image-wrap');
+  if (!wrap) return;
+  const oldImg = document.getElementById('card-modal-image');
+  if (!oldImg) return;
+  if (isAnimating) return;
+  isAnimating = true;
+  const newImg = oldImg.cloneNode();
+  newImg.id = 'card-modal-image-temp';
+  newImg.src = card.image;
+  newImg.alt = card.title;
+  // start positioned to the right (direction>0) or left
+  newImg.style.transform = `translateX(${direction > 0 ? '100%' : '-100%'})`;
+  newImg.style.opacity = '1';
+  wrap.appendChild(newImg);
+
+  // force reflow
+  void newImg.offsetWidth;
+
+  // animate
+  oldImg.style.transition = 'transform 420ms cubic-bezier(.2,.9,.2,1), opacity 420ms ease';
+  newImg.style.transition = 'transform 420ms cubic-bezier(.2,.9,.2,1), opacity 420ms ease';
+  oldImg.style.transform = `translateX(${direction > 0 ? '-100%' : '100%'})`;
+  oldImg.style.opacity = '0';
+  newImg.style.transform = 'translateX(0)';
+
+  function cleanup() {
+    if (oldImg && oldImg.parentNode) oldImg.parentNode.removeChild(oldImg);
+    newImg.id = 'card-modal-image';
+    newImg.style.transition = '';
+    newImg.style.transform = '';
+    newImg.style.opacity = '';
+    wrap.removeEventListener('transitionend', cleanup);
+    isAnimating = false;
+  }
+
+  // fallback: wait for transitionend on newImg
+  newImg.addEventListener('transitionend', () => setTimeout(cleanup, 0), { once: true });
 }
 
 function closeCardModal() {
@@ -210,6 +295,21 @@ function closeCardModal() {
   const activeCard = document.querySelector('.card.selected');
   if (activeCard) {
     activeCard.classList.remove('selected');
+  }
+  currentIndex = -1;
+  // cleanup modal image wrappers
+  const wrap = document.getElementById('card-modal-image-wrap');
+  if (wrap) {
+    const imgs = Array.from(wrap.querySelectorAll('img'));
+    if (imgs.length > 1) {
+      // keep the first as canonical image
+      imgs.slice(1).forEach(i => i.parentNode && i.parentNode.removeChild(i));
+      const first = imgs[0];
+      first.id = 'card-modal-image';
+      first.style.transition = '';
+      first.style.transform = '';
+      first.style.opacity = '';
+    }
   }
 }
 
@@ -259,10 +359,17 @@ if (modalOverlay) {
   modalOverlay.addEventListener('click', closeCardModal);
 }
 
+if (prevButton) prevButton.addEventListener('click', () => navigate(-1));
+if (nextButton) nextButton.addEventListener('click', () => navigate(1));
+
 // Close modal on Escape key
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && !cardModal.classList.contains('hidden')) {
     closeCardModal();
+  }
+  if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && !cardModal.classList.contains('hidden')) {
+    if (e.key === 'ArrowLeft') navigate(-1);
+    if (e.key === 'ArrowRight') navigate(1);
   }
 });
 

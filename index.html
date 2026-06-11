@@ -3,14 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>Ultimate-Crosss DB</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="dist/styles.css">
     </head>
 <!-- TOP BAR -->
     <header class="topbar">
-        <div class="topbar_all">Ultimate-Cross DB
-            <button type="button" class="topbar_button active" data-page="db_page">Database</button>
-            <button type="button" class="topbar_button" data-page="rules_page">Rules</button>
+      <div class="topbar_all">
+        <div class="logo">Ultimate-Cross DB</div>
+        <div class="topbar_actions">
+          <button type="button" class="topbar_button active" data-page="db_page">Database</button>
+          <button type="button" class="topbar_button" data-page="rules_page">Rules</button>
         </div>
+      </div>
     </header>
 <!-- SEARCH BAR -->
     <body>
@@ -34,7 +37,9 @@
                     <div class="card-modal-content">
                         <button id="close-card-modal" class="card-modal-close" type="button" aria-label="Close card">×</button>
                         <div class="card-modal-left">
-                            <img id="card-modal-image" src="" alt="" />
+                          <div id="card-modal-image-wrap" class="card-modal-image-wrap">
+                            <img id="card-modal-image" class="carousel-img" src="" alt="" />
+                          </div>
                         </div>
                         <div class="card-modal-right">
                             <div class="card-modal-copy">
@@ -44,14 +49,15 @@
                                 <p id="card-modal-artist" class="card-modal-artist"></p>
                             </div>
                         </div>
+                        <button id="card-prev" class="card-modal-arrow left" aria-label="Previous card">‹</button>
+                        <button id="card-next" class="card-modal-arrow right" aria-label="Next card">›</button>
                     </div>
                 </div>
                 <script src="script.js" defer></script>
             </section>
-
             <section id="rules_page" class="page hidden" aria-hidden="true">
                 <div class="page-content">
-                    <h1>Ultimate Cross Rulebook</h1>
+                    <h1>Ultimate-Cross Rulebook</h1>
                     <h2>Winning the Game</h2>
                     <p>There are two ways to win in Ultimate Cross:</p>
                     <ul>
@@ -69,8 +75,7 @@
                       <li><strong>Flavor Text</strong> — extra story or theme text with no gameplay effect.</li>
                       <li><strong>Artist Credit</strong> — who created the card art.</li>
                       <li><strong>Rarity</strong> — how rare the card is in the set.</li>
-                      <li><strong>Card Number</strong> — the card’s place within the set.
-                      </li>
+                      <li><strong>Card Number</strong> — the card’s place within the set.</li>
                     </ol>
                     <p>Rulers, Creatures, and Equipments also show <strong>ATK</strong> and <strong>DEF</strong>.</p>
 
@@ -182,6 +187,6 @@
                     </ul>
                 </div>
             </section>
-<!-- END OF FILE -->
+        </main>
     </body>
-</html>
+<!-- END OF FILE -->
