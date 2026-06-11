@@ -1,11 +1,11 @@
 id: card-5
 title: Molten Golem
-text: fire creature animated auto when played deal 2 damage to any target if target survives gain 1 atk
+text: auto when played deal 2 damage to any target if target survives gain 1 atk
 image: images/card5.png
 set: 1
 atk: 3
 def: 2
 cost: 4
-type: 
-rarity: 
-artist: 
+type: fire creature animated
+rarity: rare
+artist: vexabond
