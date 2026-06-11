@@ -1,11 +1,11 @@
 id: card-1
 title: Fire Dancer
-text: Fire Creature Human auto when played deal 1 damage to target creature
+text: auto when played deal 1 damage to target creature
 image: images/card1.png
 set: 1
 atk: 2
 def: 2
 cost: 2
-type: 
-rarity: 
-artist: 
+type: fire creature human
+rarity: common
+artist: batty

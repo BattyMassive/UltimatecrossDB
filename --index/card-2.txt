@@ -1,11 +1,11 @@
 id: card-2
 title: Flaming Fire
-text: Fire Spell deal 2 damage to any target
+text: deal 2 damage to any target
 image: images/card2.png
 set: 1
-atk: 
-def: 
+atk: null
+def: null
 cost: 2
-type: 
-rarity: 
-artist: 
+type: fire spell
+rarity: common
+artist: vexabond
