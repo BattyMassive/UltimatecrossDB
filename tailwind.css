@@ -131,7 +131,7 @@
   .results {
     flex: 1 1 100%;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
     width: 100%;
     max-width: 1200px;
@@ -224,7 +224,7 @@
     gap: 24px;
     z-index: 1110;
     width: min(100%, 1100px);
-    max-height: calc(100vh - 80px);
+    max-height:;
     align-items: stretch;
     justify-content: center;
     padding: 24px;
